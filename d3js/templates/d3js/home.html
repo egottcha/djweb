@@ -1,0 +1,15 @@
+{% extends "person/header.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'd3js/css/FDG.css' %}" type = "text/css"/>
+<h2>D3.js Force Directed Graph example</h2>
+
+<div id="canvas"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+    var fdgjson = '{% static 'd3js/json/FDG.json' %}'
+</script>
+<script src="{% static 'd3js/js/FDG.js' %}"></script>
+
+{% endblock %}

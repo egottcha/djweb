@@ -1,0 +1,16 @@
+{% extends "person/header.html" %}
+
+{% block content %}
+<div class="list-group">
+    {% for tweet in tweets %}
+        <a href="{{ tweet.url }}" class="list-group-item" target="_blank" style="margin-bottom: 10px">
+        {% if tweet.head != 'Tweet' %}
+            <p class="list-group-item-text">{{ tweet.head }}</p>
+        {% endif %}
+        <h4 class="list-group-item-heading">{{ tweet.user }}</h4>
+        <h2 class="list-group-item-text">{{ tweet.status }}</h2>
+        <p class="list-group-item-text">{{ tweet.date }}</p>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,6 +1,12 @@
-{% extends "webapp/header.html" %}
-{% block content %}
-<p>Hey! Welcome to my website!</p>
+{% extends "person/header.html" %}
 
-{% include 'webapp/pltCanvas.py' %}
+{% block content %}
+{% load staticfiles %}
+<div class="col-sm-7">
+    <h3>Matplotlib is a Python plotting library which produces publication quality figures in a variety of hardcopy formats
+    and interactive environments across platforms.</h3>
+    <br>
+    <p>Matplotlib created sample image:</p>
+    <img src="{% static 'webapp/img/plot_demo.png' %}">
+</div>
 {% endblock %}

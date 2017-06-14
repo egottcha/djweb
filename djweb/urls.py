@@ -21,4 +21,6 @@ urlpatterns = [
     url(r'^webapp/', include('webapp.urls')),
     url(r'^', include('person.urls')),
     url(r'^blog/', include('blog.urls')),
+    url(r'^tweet/', include('tweet.urls')),
+    url(r'^d3js/', include('d3js.urls')),
 ]
