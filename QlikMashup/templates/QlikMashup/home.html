@@ -1,0 +1,11 @@
+{% extends "person/header.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<div class="container-fluid">
+    <h2>Qlik Sense Mashup example</h2>
+    <iframe src="http://localhost:4848/extensions/basic/basic.html" width="100%" height="600"
+            style="border:none;"></iframe>
+</div>
+
+{% endblock %}
